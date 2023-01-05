@@ -8,7 +8,7 @@
   >
     <div class="flex items-center space-x-8 w-full">
       <a href="/"
-        ><h2 class="pl-4 text-3xl transition-all hover:text-pink-400">
+        ><h2 class="pl text-3xl transition-all text-cyan-400 hover:text-pink-400">
           {vitalCode}
         </h2></a
       >
@@ -19,7 +19,7 @@
       </ul>
     </div>
 
-    <div class="pr-4">
+    <div class="">
       <!-- svelte-ignore security-anchor-rel-noreferrer -->
       <a href="https://github.com/vitalspace" target="_blank">
         <svg
