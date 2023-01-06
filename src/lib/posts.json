@@ -1,0 +1,14 @@
+[
+  {
+    "id": 0,
+    "title": "Astro",
+    "subject": "Static Site Generator",
+    "img": "https://www.faztweb.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Ffazt%2Fimage%2Fupload%2Fc_scale%2Cw_380%2Fv1672096946%2Ftutorials%2Fpi9a5cf2oild9pjpzqir.jpg&w=384&q=75",
+    "tags": ["js", "Astro", "TypeScript", "Static", "Site"],
+    "smallDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, earum.",
+    "body1": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nulla nam velit porro fugit cupiditate dolorum eum nemo! Laborum, consequatur quae velit eius iste consectetur blanditiis ea reiciendis delectus pariatur quo impedit reprehenderit natus ab rerum dignissimos numquam modi! Repudiandae voluptatibus incidunt maxime quasi obcaecati reprehenderit alias corrupti reiciendis rerum!",
+    "body2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nulla nam velit porro fugit cupiditate dolorum eum nemo! Laborum, consequatur quae velit eius iste consectetur blanditiis ea reiciendis delectus pariatur quo impedit reprehenderit natus ab rerum dignissimos numquam modi! Repudiandae voluptatibus incidunt maxime quasi obcaecati reprehenderit alias corrupti reiciendis rerum!",
+    "body3": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nulla nam velit porro fugit cupiditate dolorum eum nemo! Laborum, consequatur quae velit eius iste consectetur blanditiis ea reiciendis delectus pariatur quo impedit reprehenderit natus ab rerum dignissimos numquam modi! Repudiandae voluptatibus incidunt maxime quasi obcaecati reprehenderit alias corrupti reiciendis rerum!",
+    "body4": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nulla nam velit porro fugit cupiditate dolorum eum nemo! Laborum, consequatur quae velit eius iste consectetur blanditiis ea reiciendis delectus pariatur quo impedit reprehenderit natus ab rerum dignissimos numquam modi! Repudiandae voluptatibus incidunt maxime quasi obcaecati reprehenderit alias corrupti reiciendis rerum!"
+  }
+]
