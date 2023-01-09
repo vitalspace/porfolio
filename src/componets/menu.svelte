@@ -15,7 +15,9 @@
       <ul class="flex space-x-2">
         <li><a class="hover:text-pink-400" href="/">Home</a></li>
         <li><a class="hover:text-pink-400" href="/blog">Blog</a></li>
-        <li><a class="hover:text-pink-400" href="/">Tutorials</a></li>
+        <li><a class="hover:text-pink-400" href="/tags">Tags</a></li>
+        <li><a class="hover:text-pink-400" href="/projects">Projects</a></li>
+        <li><a class="hover:text-pink-400" href="/tutorials">Tutorials</a></li>
       </ul>
     </div>
 

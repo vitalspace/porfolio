@@ -1,14 +1,13 @@
 <script lang="ts">
-  import Blog from "../lib/blog.json";
+  import Tags from "../lib/tags.json";
   import Footer from "../componets/footer.svelte";
-
   const url: URL = new URL(window.location.href);
   const urlBase: string[] = url.search.split("=");
   const rute: string = urlBase[0].split("?")[1];
   const id: string = urlBase[1];
   //@ts-ignore
-  const posts = Blog[1].Blog;
- 
+  const posts: Post = Tags[1].Blog;
+
   let post: {
     title: string;
     subject: string;
@@ -19,16 +18,19 @@
     body2: string;
     body3: string;
     body4: string;
-  };
+  } | false;
 
   if (rute == "id" && id) {
     //@ts-ignore
-    post = posts.find((e: string) => e.id == id);
+    post = posts.find(
+      //@ts-ignore
+      (e: string) => e.id.replace(" ", "-").toLowerCase() == id
+    );
   } else {
+    post = false
   }
 </script>
 
-{#if post}
   <div class="container mx-auto mt-4 mb-4">
     <div class="blog-post rounded-lg bg-zinc-700 p-8 shadow-lg">
       <h1 class="mb-4 text-3xl font-bold leading-tight text-white">
@@ -69,5 +71,6 @@
       </div>
     </div>
   </div>
-  <Footer/>
-{/if}
+  <Footer />
+
+

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Blog from "../lib/posts.json";
+  import Blog from "../lib/blog.json";
   //@ts-ignore
   const posts = Blog[1].Blog;
 </script>
@@ -12,7 +12,7 @@
   <div class="w-full flex flex-wrap">
     {#each posts as elem}
       <div
-        class="w-full sm:mx-1 rounded-t-md sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 mb-4"
+        class="w-full sm:mx-1 rounded-t-md sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 mb-4 hover:scale-110 transition duration-300"
       >
         <a href={`/post?id=` + elem.id}>
           <img
