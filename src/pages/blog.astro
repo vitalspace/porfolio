@@ -1,18 +1,70 @@
 ---
 import Menu from "../componets/menu.svelte";
-import Blog from "../componets/blog.svelte";
+import Blog from "../lib/blog.json";
+const post = Blog[1].Blog;
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>VitalCode.xyz | Blog</title>
+    <meta
+      name="description"
+      content="VitalCode Blog, Tutorials, Code, E Learning"
+    />
+    <meta
+      name="keywords"
+      content="Tutorials, Code, TypeScript, JavaScript, HTML"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="VitalCode" />
+    <meta name="copyright" content="Copyright 2023 VitalCode." />
+    <title>VitalCode - Blog</title>
   </head>
   <body class="bg-zinc-800">
     <Menu />
-    <Blog/>
+    <!-- <Blog /> -->
+    <div class="sm:flex sm:container sm:mx-auto sm:space-x-10 mt-4">
+      <div class="w-full border-2 border-blue-400 h-28 sm:h-60 sm:w-96">
+        ajslkdjkasd
+      </div>
+      <div class="w-full flex flex-wrap">
+        {
+          //@ts-ignore
+          post.map((elem) => (
+            <div class="w-full sm:mx-1 rounded-t-md sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 mb-4 hover:scale-110 transition duration-300">
+              <a
+                href={`/blog/` + elem.title.replaceAll(" ", "-").toLowerCase()}
+              >
+                <img
+                  class="w-full rounded-t-md"
+                  src={elem.img}
+                  alt={elem.subject}
+                  title={elem.subject}
+                />
+                <div class="bg-zinc-700">
+                  <header class="py-2 pl-2">
+                    <h2 class="text-white">{elem.title}</h2>
+                    <small class="text-gray-200">{elem.subject}</small>
+                  </header>
+                  <p class="pl-2 text-xs py-2 text-gray-300">
+                    {elem.description}
+                  </p>
+                </div>
+                <footer class="bg-zinc-900 py-2 pl-2 rounded-b-md">
+                  <small class="text-gray-300">{elem.tags[0]}</small>
+                </footer>
+              </a>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <div
+      class="text-white py-4 container mx-auto border-2 border-blue-400 text-center"
+    >
+      <a href="/blog?&page=1">1</a>
+    </div>
   </body>
 </html>
