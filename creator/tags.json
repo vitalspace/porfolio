@@ -63,24 +63,24 @@
   {
     "Blog": [
       {
-        "id": 1,
+        "id": "Astro",
         "title": "Astro",
         "subject": "Static Site Generator",
         "img": "https://www.faztweb.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Ffazt%2Fimage%2Fupload%2Fc_scale%2Cw_380%2Fv1672096946%2Ftutorials%2Fpi9a5cf2oild9pjpzqir.jpg&w=384&q=75",
         "tags": ["js", "Astro", "TypeScript", "Static", "Site"],
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, earum.",
+        "smallDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, earum.",
         "body1": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nulla nam velit porro fugit cupiditate dolorum eum nemo! Laborum, consequatur quae velit eius iste consectetur blanditiis ea reiciendis delectus pariatur quo impedit reprehenderit natus ab rerum dignissimos numquam modi! Repudiandae voluptatibus incidunt maxime quasi obcaecati reprehenderit alias corrupti reiciendis rerum!",
         "body2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nulla nam velit porro fugit cupiditate dolorum eum nemo! Laborum, consequatur quae velit eius iste consectetur blanditiis ea reiciendis delectus pariatur quo impedit reprehenderit natus ab rerum dignissimos numquam modi! Repudiandae voluptatibus incidunt maxime quasi obcaecati reprehenderit alias corrupti reiciendis rerum!",
         "body3": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nulla nam velit porro fugit cupiditate dolorum eum nemo! Laborum, consequatur quae velit eius iste consectetur blanditiis ea reiciendis delectus pariatur quo impedit reprehenderit natus ab rerum dignissimos numquam modi! Repudiandae voluptatibus incidunt maxime quasi obcaecati reprehenderit alias corrupti reiciendis rerum!",
         "body4": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nulla nam velit porro fugit cupiditate dolorum eum nemo! Laborum, consequatur quae velit eius iste consectetur blanditiis ea reiciendis delectus pariatur quo impedit reprehenderit natus ab rerum dignissimos numquam modi! Repudiandae voluptatibus incidunt maxime quasi obcaecati reprehenderit alias corrupti reiciendis rerum!"
       },
       {
-        "id": 2,
+        "id": "ECMAScript",
         "title": "ECMAScript: An Introduction to the Standard for Modern JavaScript",
         "subject": "ECMAScript",
         "img": "https://i.imgur.com/pSJFZc7.jpg",
         "tags": ["ECMAScript", "JavaScript", "programming"],
-        "description": "ECMAScript is the standard for modern JavaScript, but what exactly is it and how does it impact your code? Read on to learn more about ECMAScript and its role in the world of programming.",
+        "smallDescription": "ECMAScript is the standard for modern JavaScript, but what exactly is it and how does it impact your code? Read on to learn more about ECMAScript and its role in the world of programming.",
         "body1": "ECMAScript, commonly known as JavaScript, is a programming language that is widely used to build web applications and add interactivity to websites. It was originally developed in 1995 by Netscape, but has since evolved through the efforts of the European Computer Manufacturers Association (ECMA) and the TC39 committee, which is responsible for maintaining the ECMAScript standard. ECMAScript is a specification that defines the syntax, semantics, and runtime behavior of the JavaScript language. It serves as a blueprint for implementing JavaScript, and any language that conforms to this specification is considered an ECMAScript language. Over the years, ECMAScript has undergone several updates, with the latest version being ECMAScript 2020 (ES2020). Each new version introduces new features and enhancements that help to improve the functionality and performance of JavaScript.",
         "body2": "One of the key features of ECMAScript is its support for object-oriented programming. This allows developers to create complex and modular code by defining objects and their properties and methods. ECMAScript also supports functional programming, which is a programming paradigm that treats computation as the evaluation of mathematical functions. Another important aspect of ECMAScript is its compatibility with web browsers. JavaScript code written in ECMAScript can be executed in any browser that supports the standard, making it a widely accessible language for building web applications. In addition to its use on the web, ECMAScript is also used in the development of server-side applications and mobile app development frameworks, such as React Native.",
         "body3": "While ECMAScript is a powerful and versatile language, it does have some limitations. One issue is that it is single-threaded, meaning that it can only execute one task at a time. This can lead to performance bottlenecks when dealing with complex or long-running tasks. Another limitation is that ECMAScript does not have built-in support for certain features that are commonly used in other programming languages, such as networking or access to low-level system resources. These features must be implemented through external libraries or APIs. Despite these limitations, ECMAScript remains a popular choice for developers due to its simplicity, flexibility, and widespread support.",

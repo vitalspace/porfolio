@@ -1,5 +1,6 @@
 <script lang="ts">
   import Tags from "../lib/tags.json";
+  //@ts-ignore
   const tags: string[] = Tags[0].tags;
 </script>
 

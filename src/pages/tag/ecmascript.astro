@@ -1,0 +1,69 @@
+---
+import Menu from "../../componets/menu.svelte";
+import Tags from "../../lib/tags.json";
+import Footer from "../../componets/footer.svelte";
+
+const posts = Tags[1].Blog;
+const post = posts.find((e) => e.id == 2);
+---
+
+<html lang="en">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <title>VitalCode.xyz | {post.title}</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content={post.description} />
+  <meta name="keywords" content={post.tags.map((tag) => tag)} />
+  <meta name="author" content="Vital" />
+  <meta name="copyright" content=`Copyright 2022 ${post.description}` />
+  <body class="bg-zinc-800">
+    <Menu />
+    <div class="container mx-auto mt-4 mb-4">
+      <div class="blog-post rounded-lg bg-zinc-700 p-8 shadow-lg">
+        <h1 class="mb-4 text-3xl font-bold leading-tight text-white">
+          {post.title}
+        </h1>
+        <h2 class="mb-4 text-xl font-bold text-gray-300">{post.subject}</h2>
+        <div class="blog-post-image mb-8">
+          <img
+            width="400"
+            height="300"
+            src={post.img}
+            alt={post.title}
+            class="w-full sm:w-1/2 rounded-lg shadow-md"
+          />
+        </div>
+        <div class="blog-post-tags mb-4">
+          <span class="mr-2 font-bold text-gray-400">Tags:</span>
+          <ul class="flex flex-wrap">
+            {
+              post.tags.map((tag) => (
+                <li>
+                  <a
+                    class="mr-2 mb-2 rounded-full bg-gray-200 px-3 py-1 font-semibold"
+                    href={`/tag/` + tag.replaceAll(" ", "-").toLowerCase()}
+                  >
+                    {tag}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        <p
+          class="blog-post-small-description mb-8 text-sm font-light text-gray-400"
+        >
+          {post.description}
+        </p>
+        <div class="blog-post-body text-white">
+          <p class="mb-4 text-lg leading-relaxed">{post.body1}</p>
+          <p class="mb-4 text-lg leading-relaxed">{post.body2}</p>
+          <p class="mb-4 text-lg leading-relaxed">{post.body3}</p>
+          <p class="mb-4 text-lg leading-relaxed">{post.body4}</p>
+        </div>
+      </div>
+    </div>
+    <Footer/>
+  </body>
+</html>
