@@ -9,7 +9,7 @@
 >
   <div class="flex flex-wrap space-x-2 justify-center items-center">
     {#each tags as tag}
-      <a class="bg-pink-500 font-serif text-white rounded-md p-2 m-2 hover:scale-110 transition duration-300" href="/tag/{tag.replaceAll(" ", "-").toLowerCase()}">{tag}</a>
+      <a class="bg-pink-500 a font-serif text-white rounded-md p-2 m-2 hover:scale-110 transition duration-300" href="/tag/{tag.replaceAll(" ", "-").toLowerCase()}">{tag}</a>
     {/each}
   </div>
 </div>
