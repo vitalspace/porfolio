@@ -9,7 +9,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "create": "node ./creator/create.js"
+    "create": "node ./creator/create.js",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@astrojs/svelte": "^1.0.2",

@@ -13,5 +13,5 @@ export default defineConfig({
   integrations: [svelte(), tailwind()],
   optimizeDeps: { exclude: ["svelte-navigator"] },
   site: 'https://vitalspace.github.io',
-  base: '/porfolio',
+  base: '/',
 });
