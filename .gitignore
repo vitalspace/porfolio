@@ -1,5 +1,6 @@
 # build output
 dist/
+creator/
 
 # dependencies
 node_modules/
