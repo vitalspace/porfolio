@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Tags from "../lib/tags.json";
+  import Tags from "../lib/blog.json";
   //@ts-ignore
   const tags: string[] = Tags[1].tags;
 </script>
