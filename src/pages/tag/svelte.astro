@@ -1,0 +1,142 @@
+---
+import Menu from "../../componets/menu.svelte";
+import Tags from "../../lib/tags.json";
+import Footer from "../../componets/footer.svelte";
+
+const posts = Tags[2].Blog;
+const post = posts.find((e) => e.id == 3);
+---
+
+<html lang="en">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <title>VitalCode.xyz | {post.title}</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content={post.description} />
+  <meta name="keywords" content={post.tags.map((tag) => tag)} />
+  <meta name="author" content="Vital" />
+  <meta name="copyright" content=`Copyright 2022 ${post.description}` />
+  <body class="bg-zinc-800">
+    <Menu />
+    <div class="container mx-auto mt-4 mb-4">
+      <div class="blog-post rounded-lg bg-zinc-700 p-8 shadow-lg">
+        <h1 class="mb-4 text-3xl font-bold leading-tight text-white">
+          {post.title}
+        </h1>
+        <h2 class="mb-4 text-xl font-bold text-gray-300">{post.subject}</h2>
+        <div class="blog-post-image mb-8">
+          <img
+            width="400"
+            height="300"
+            src={post.img}
+            alt={post.title}
+            class="w-full sm:w-1/2 rounded-lg shadow-md"
+          />
+        </div>
+        <div class="blog-post-tags mb-4">
+          <span class="mr-2 font-bold text-gray-400">Tags:</span>
+          <ul class="flex flex-wrap">
+            {
+              post.tags.map((tag) => (
+                <li class="mr-2 mb-2 mt-2">
+                  <a
+                    class=" rounded-full bg-gray-200 px-3 py-1 font-semibold"
+                    href={`/tag/` + tag.replaceAll(" ", "-").toLowerCase()}
+                  >
+                    {tag.toLowerCase()}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        <p
+          class="blog-post-small-description mb-8 text-sm font-light text-gray-400"
+        >
+          {post.description}
+        </p>
+        <div class="blog-post-body text-white">
+
+          <p class="mb-4 text-lg leading-relaxed">
+            In the world of web development, developers are constantly looking
+            for innovative ways to improve the performance and simplicity of
+            their projects. One of the latest trends in this field is Svelte, a
+            revolutionary approach to JavaScript that promises to create
+            incredibly reactive and fast applications.
+          </p>
+
+          <p class="mb-4 text-lg leading-relaxed">What is Svelte?</p>
+          <p class="mb-4 text-lg leading-relaxed">
+            Svelte is a framework that uses a unique approach of compiling
+            components into highly optimized JavaScript code, unlike traditional
+            JavaScript frameworks like React, Angular and Vue. It allows for the
+            creation of reactive web applications by eliminating the need for a
+            Virtual DOM, resulting in increased performance compared to other
+            frameworks.
+          </p>
+
+          <p class="mb-4 text-lg leading-relaxed">Uses of Svelte</p>
+          <p class="mb-4 text-lg leading-relaxed">
+            Svelte can be used in a small part of code or in a complete
+            single-page application. Some examples of how Svelte has been used
+            include the Upstream platform, a desktop version of a P2P
+            development platform, and the Decathlon sports equipment store,
+            which used Svelte to build their app.
+          </p>
+
+          <p class="mb-4 text-lg leading-relaxed">Advantages of Svelte</p>
+          <p class="mb-4 text-lg leading-relaxed">
+            Some of the advantages of using Svelte include:
+          </p>
+          <ul class="mb-4 text-lg pl-4 leading-relaxed list-disc">
+            <li class="mb-4 text-lg leading-relaxed">
+              Improved Performance: due to its compilation process, Svelte is
+              faster than other JavaScript frameworks.
+            </li>
+            <li class="mb-4 text-lg leading-relaxed">
+              Code-splitting techniques: Svelte allows developers to use
+              code-splitting techniques to further improve the performance of
+              their application.
+            </li>
+            <li class="mb-4 text-lg leading-relaxed">
+              Simplicity: Svelte focuses on simplicity, making it easy to learn
+              and master.
+            </li>
+          </ul>
+
+          <p class="mb-4 text-lg leading-relaxed">Disadvantages of Svelte</p>
+          <p class="mb-4 text-lg leading-relaxed">
+            Some of the disadvantages of using Svelte include:
+          </p>
+          <ul class="mb-4 text-lg pl-4 leading-relaxed list-disc">
+            <li class="mb-4 text-lg leading-relaxed">
+              Lower adoption: Svelte is a relatively new framework and has not
+              yet reached the same level of popularity as other JavaScript
+              frameworks.
+            </li>
+            <li class="mb-4 text-lg leading-relaxed">
+              Lack of resources: due to its lower adoption, it may be more
+              difficult to find resources and solutions to specific Svelte
+              problems.
+            </li>
+          </ul>
+
+          <p class="mb-4 text-lg leading-relaxed">
+            In conclusion, Svelte is an exciting and promising opportunity for
+            web application development. With its unique approach to JavaScript
+            and its optimization process, Svelte has the potential to greatly
+            improve the performance and simplicity of web projects. While it may
+            be a relatively new framework, its advantages are well worth
+            exploring. However, it is important to consider potential
+            disadvantages such as its lower adoption and lack of resources
+            before deciding whether to use Svelte in a project. Despite these
+            potential drawbacks, it is clear that Svelte is an increasingly
+            popular tool and is here to stay.
+          </p>
+        </div>
+      </div>
+    </div>
+    <Footer />
+  </body>
+</html>

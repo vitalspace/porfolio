@@ -3,7 +3,7 @@ import Menu from "../../componets/menu.svelte";
 import Tags from "../../lib/tags.json";
 import Footer from "../../componets/footer.svelte";
 
-const posts = Tags[1].Blog;
+const posts = Tags[2].Blog;
 const post = posts.find((e) => e.id == 2);
 ---
 
@@ -39,7 +39,7 @@ const post = posts.find((e) => e.id == 2);
           <ul class="flex flex-wrap">
             {
               post.tags.map((tag) => (
-                <li>
+                <li class="mr-2 mb-2 mt-2">
                   <a
                     class="mr-2 mb-2 rounded-full bg-gray-200 px-3 py-1 font-semibold"
                     href={`/tag/` + tag.replaceAll(" ", "-").toLowerCase()}
