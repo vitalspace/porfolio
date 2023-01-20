@@ -1,6 +1,7 @@
 ---
 import Menu from "../componets/menu.svelte";
 import Blog from "../lib/blog.json";
+import Footer from "../componets/footer.svelte";
 const post = Blog[2].Blog;
 ---
 
@@ -26,8 +27,14 @@ const post = Blog[2].Blog;
     <Menu />
     <!-- <Blog /> -->
     <div class="sm:flex sm:container sm:mx-auto sm:space-x-10 mt-4">
-      <div class="w-full border-2 mb-4 border-blue-400 h-60 sm:h-60 sm:w-96">
-        <img class="w-full h-full" src="/img/projects/projects.webp" alt="">
+      <div
+        class="w-full border-2 mb-4 rounded-md border-blue-400 h-60 sm:h-60 sm:w-96"
+      >
+        <img
+          class="w-full h-full rounded-md"
+          src="/img/projects/projects.webp"
+          alt=""
+        />
       </div>
       <div class="w-full flex flex-wrap">
         {
@@ -35,7 +42,9 @@ const post = Blog[2].Blog;
           post.map((elem) => (
             <div class="w-full sm:mx-1 rounded-t-md rounded-b-md sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4 hover:scale-110 hover:border-2 border-cyan-500 transition duration-300">
               <a
-                href={elem.url + elem.tags[0].replaceAll(" ", "-").toLowerCase()}
+                href={
+                  elem.url + elem.tags[0].replaceAll(" ", "-").toLowerCase()
+                }
               >
                 <img
                   class="w-full rounded-t-md"
@@ -44,16 +53,18 @@ const post = Blog[2].Blog;
                   title={elem.subject}
                 />
                 <div class="bg-zinc-700 xl:h-48">
-                  <header class="py-2 pl-2"> 
+                  <header class="py-2 pl-2">
                     <h2 class="text-white">{elem.title.slice(0, 60)}</h2>
                     <small class="text-gray-200">{elem.subject}</small>
                   </header>
                   <p class="pl-2 pr-2 text-xs py-2 text-gray-300">
-                    { elem.description.slice(0,165) }...
+                    {elem.description.slice(0, 165)}...
                   </p>
                 </div>
                 <footer class="bg-zinc-900 py-2 pl-2 rounded-b-md">
-                  <small class="text-white bg-red-500 p-1 rounded-sm">{elem.tags[0]}</small>
+                  <small class="text-white bg-red-500 p-1 rounded-sm">
+                    {elem.tags[0]}
+                  </small>
                 </footer>
               </a>
             </div>
@@ -61,10 +72,6 @@ const post = Blog[2].Blog;
         }
       </div>
     </div>
-    <div
-      class="text-white py-4 container mx-auto border-2 border-blue-400 text-center"
-    >
-      <a href="/blog?&page=1">1</a>
-    </div>
+    <Footer />
   </body>
 </html>
