@@ -1,0 +1,207 @@
+---
+import Menu from "../../componets/menu.svelte";
+import Tags from "../../lib/blog.json";
+import Footer from "../../componets/footer.svelte";
+
+const posts = Tags[3].Projects;
+const post = posts.find((e) => e.id == 1);
+---
+
+<html lang="en">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <title>VitalCode.xyz | {post.title}</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content={post.description} />
+  <meta name="keywords" content={post.tags.map((tag) => tag)} />
+  <meta name="author" content="Vital" />
+  <meta name="copyright" content=`Copyright 2022 ${post.description}` />
+  <body class="bg-zinc-800">
+    <Menu />
+    <div class="container mx-auto mt-4 mb-4">
+      <div class="blog-post rounded-lg bg-zinc-700 p-8 shadow-lg">
+        <h1 class="mb-4 text-3xl font-bold leading-tight text-white">
+          {post.title}
+        </h1>
+        <h2 class="mb-4 text-xl font-bold text-gray-300">{post.subject}</h2>
+        <div class="blog-post-image mb-8">
+          <img
+            width="400"
+            height="300"
+            src={post.img}
+            alt={post.title}
+            class="w-full sm:w-1/2 rounded-lg shadow-md"
+          />
+        </div>
+        <div class="blog-post-tags mb-4">
+          <span class="mr-2 font-bold text-gray-400">Tags:</span>
+          <ul class="flex flex-wrap">
+            {
+              post.tags.map((tag) => (
+                <li class="mr-2 mb-2 mt-2">
+                  <a
+                    class=" rounded-full bg-gray-200 px-3 py-1 font-semibold"
+                    href={`/tag/` + tag.replaceAll(" ", "-").toLowerCase()}
+                  >
+                    {tag.toLowerCase()}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        <p
+          class="blog-post-small-description mb-8 text-sm font-light text-gray-400"
+        >
+          {post.description}
+        </p>
+        <div class="blog-post-body text-white">
+          <p class="mb-4 text-lg leading-relaxed">
+            Build Desktop Apps with bun.js and chromium-based browsers. This is
+            a project still under construction, please be patient.
+          </p>
+
+          <p class="mb-4 text-lg leading-relaxed">What is?</p>
+          <p class="mb-4 text-lg leading-relaxed">
+            WebApp, a library that allows you to create desktop applications
+            with Bun Js (The new JavaScript Run time) and Chromium browsers.
+          </p>
+
+          <p class="mb-4 text-lg leading-relaxed">
+            In this blog, I want to introduce you to WebApp and how it can help
+            you create desktop applications quickly and easily. As mentioned
+            earlier, WebApp uses your Chromium based browser to launch your
+            application, meaning you don't need to download any additional
+            software to use it.
+          </p>
+
+          <p class="mb-4 text-lg leading-relaxed">
+            Additionally, WebApp allows you to use any UI Framework to build the
+            interface for your application. In this example, we will use Svelte,
+            an ultra-fast framework that allows you to create reactive and
+            dynamic user interfaces for the web. Svelte is an excellent option
+            for building attractive and modern interfaces for your desktop
+            applications.
+          </p>
+
+          <p class="mb-4 text-lg leading-relaxed">
+            In this blog, I will also show you how to set up and use WebApp, as
+            well as examples of how you can use it to create desktop
+            applications.
+          </p>
+
+          <hr />
+
+          <p class="mb-4 mt-4 text-lg leading-relaxed">
+            To get started with the project, clone the same as follows. open a
+            console and paste this:
+          </p>
+          <p
+            class="mb-4 text-lg leading-relaxed bg-slate-500 w-max p-2 rounded-sm"
+          >
+            git clone https://github.com/Bunland/webapp.git
+          </p>
+
+          <p class="mb-4 text-lg leading-relaxed">
+            Now go to the project with:
+          </p>
+
+          <p
+            class="mb-4 text-lg leading-relaxed bg-slate-500 w-max p-2 rounded-sm"
+          >
+            cd webapp
+          </p>
+
+          <p class="mb-4 text-lg leading-relaxed">
+            install dependencies (The necessary dependencies for our Svelte Ui
+            will be installed).
+          </p>
+
+          <p
+            class="mb-4 text-lg leading-relaxed bg-slate-500 w-max p-2 rounded-sm"
+          >
+            cd myapp
+          </p>
+
+          <p
+            class="mb-4 text-lg leading-relaxed bg-slate-500 w-max p-2 rounded-sm"
+          >
+            bun install
+          </p>
+
+          <p class="mb-4 text-lg leading-relaxed">
+            Run the application in development mode. Go back to the main
+            "webapp" folder and type in the console:
+          </p>
+
+          <p
+            class="mb-4 text-lg leading-relaxed bg-slate-500 w-max p-2 rounded-sm"
+          >
+            bun run dev
+          </p>
+
+          <p class="mb-4 text-lg leading-relaxed">
+            Build the webapp. Unfortunately "for now", the only way to build our
+            webapp is using the Golang language, so make sure you have golang
+            installed. You can follow the following link which will help you to
+            install Golang easily:
+            <a
+              class="text-pink-500"
+              target="_blank"
+              href="https://github.com/golang/go/wiki/Ubuntu">Install Go</a
+            >
+          </p>
+          <p class="mb-4 text-lg leading-relaxed">
+            Once you have golang installed write in the console in the "webapp"
+            directory:
+          </p>
+
+          <p
+            class="mb-4 text-lg leading-relaxed bg-slate-500 w-max p-2 rounded-sm"
+          >
+            bun run build
+          </p>
+          <p class="mb-4 text-lg leading-relaxed">
+            Next, Golang will take care of packaging your application, you will
+            see that a folder called "webapp_1.0.0" and a file called
+            "webapp_1.0.0.deb" have been created, with the latter you will be
+            able to install your application on your computer.
+          </p>
+
+          <video
+            src="https://user-images.githubusercontent.com/29004070/190515371-e656baf2-b5d0-4d71-8bd6-3acbc46c02e2.mp4"
+            controls></video>
+
+          <p class="mb-4 mt-4 text-lg leading-relaxed">
+            If you wish, you can modify the name of the application and its
+            information in the file: build-linux.sh, if you want to change the
+            icons you can go to the "icons" folder and modify the existing one
+            for another of your preference.
+          </p>
+
+          <p class="mb-4 text-lg leading-relaxed">
+            This project is based on Lorca and in turn on Carlo.js.
+            <p>
+              Lorca <a
+                href="https://github.com/zserge/lorca"
+                class="text-pink-500"
+                target="_blank">https://github.com/zserge/lorca</a
+              >
+            </p>
+            <p>
+              Carlo
+              <a
+                href="https://github.com/GoogleChromeLabs/carlo"
+                target="_blank"
+                class="text-pink-500"
+                >https://github.com/GoogleChromeLabs/carlo</a
+              >
+            </p>
+          </p>
+        </div>
+      </div>
+    </div>
+    <Footer />
+  </body>
+</html>
