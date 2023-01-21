@@ -125,48 +125,6 @@
         "body3": "While ECMAScript is a powerful and versatile language, it does have some limitations. One issue is that it is single-threaded, meaning that it can only execute one task at a time. This can lead to performance bottlenecks when dealing with complex or long-running tasks. Another limitation of ECMAScript is that it does not offer built-in support for features commonly used in other programming languages, such as networking or access to low-level system resources. These features must be implemented with the help of external libraries or APIs. Despite these limitations, ECMAScript is still popular among developers due to its simplicity, flexibility, and widespread support.",
         "body4": "In conclusion, the ECMAScript standard is essential for modern JavaScript development and plays an important role in the development of web applications and other software. Its support for object-oriented and functional programming, as well as its compatibility with web browsers, make it a highly valuable tool for software developers. Despite its limitations, its simplicity and flexibility make it a popular choice for building a wide range of software applications.",
         "page": 1
-      },
-      {
-        "id": 4,
-        "url": "/tag/",
-        "title": "Svelte: A Revolutionary Way of Developing Web Applications",
-        "subject": "Svelte",
-        "img": "/img/tags/svelte.webp",
-        "tags": [
-          "Svelte",
-          "JavaScript",
-          "Spa",
-          "Applications",
-          "Web development",
-          "Revolutionary way"
-        ],
-        "description": "Svelte is a modern and promising JavaScript framework that offers performance and simplicity in web application development.",
-        "body1": "In the world of web development, developers are constantly looking for innovative ways to improve the performance and simplicity of their projects. One of the latest trends in this field is Svelte, a revolutionary approach to JavaScript that promises to create incredibly reactive and fast applications.\r \t \n\n\n\n\n\n\n What is Svelte?\n Svelte is a framework that uses a unique approach of compiling components into highly optimized JavaScript code, unlike traditional JavaScript frameworks like React, Angular and Vue. It allows for the creation of reactive web applications by eliminating the need for a Virtual DOM, resulting in increased performance compared to other frameworks.",
-        "body2": "One of the key features of ECMAScript is its object-oriented programming support. This enables developers to create complex and modular code by defining objects and their properties and methods. ECMAScript also supports functional programming, which is a programming paradigm that treats computation as the evaluation of mathematical functions. Additionally, ECMAScript is compatible with web browsers, so JavaScript code written in ECMAScript can be executed in any browser that supports the standard, making it a widely accessible language for building web applications. Outside of web development, ECMAScript is also used in the development of server-side applications and mobile app development frameworks, such as React Native.",
-        "body3": "While ECMAScript is a powerful and versatile language, it does have some limitations. One issue is that it is single-threaded, meaning that it can only execute one task at a time. This can lead to performance bottlenecks when dealing with complex or long-running tasks. Another limitation of ECMAScript is that it does not offer built-in support for features commonly used in other programming languages, such as networking or access to low-level system resources. These features must be implemented with the help of external libraries or APIs. Despite these limitations, ECMAScript is still popular among developers due to its simplicity, flexibility, and widespread support.",
-        "body4": "In conclusion, the ECMAScript standard is essential for modern JavaScript development and plays an important role in the development of web applications and other software. Its support for object-oriented and functional programming, as well as its compatibility with web browsers, make it a highly valuable tool for software developers. Despite its limitations, its simplicity and flexibility make it a popular choice for building a wide range of software applications.",
-        "page": 1
-      },
-      {
-        "id": 3,
-        "url": "/tag/",
-        "title": "Svelte: A Revolutionary Way of Developing Web Applications",
-        "subject": "Svelte",
-        "img": "/img/tags/svelte.webp",
-        "tags": [
-          "Svelte",
-          "JavaScript",
-          "Spa",
-          "Applications",
-          "Web development",
-          "Revolutionary way"
-        ],
-        "description": "Svelte is a modern and promising JavaScript framework that offers performance and simplicity in web application development.",
-        "body1": "In the world of web development, developers are constantly looking for innovative ways to improve the performance and simplicity of their projects. One of the latest trends in this field is Svelte, a revolutionary approach to JavaScript that promises to create incredibly reactive and fast applications.\r \t \n\n\n\n\n\n\n What is Svelte?\n Svelte is a framework that uses a unique approach of compiling components into highly optimized JavaScript code, unlike traditional JavaScript frameworks like React, Angular and Vue. It allows for the creation of reactive web applications by eliminating the need for a Virtual DOM, resulting in increased performance compared to other frameworks.",
-        "body2": "One of the key features of ECMAScript is its object-oriented programming support. This enables developers to create complex and modular code by defining objects and their properties and methods. ECMAScript also supports functional programming, which is a programming paradigm that treats computation as the evaluation of mathematical functions. Additionally, ECMAScript is compatible with web browsers, so JavaScript code written in ECMAScript can be executed in any browser that supports the standard, making it a widely accessible language for building web applications. Outside of web development, ECMAScript is also used in the development of server-side applications and mobile app development frameworks, such as React Native.",
-        "body3": "While ECMAScript is a powerful and versatile language, it does have some limitations. One issue is that it is single-threaded, meaning that it can only execute one task at a time. This can lead to performance bottlenecks when dealing with complex or long-running tasks. Another limitation of ECMAScript is that it does not offer built-in support for features commonly used in other programming languages, such as networking or access to low-level system resources. These features must be implemented with the help of external libraries or APIs. Despite these limitations, ECMAScript is still popular among developers due to its simplicity, flexibility, and widespread support.",
-        "body4": "In conclusion, the ECMAScript standard is essential for modern JavaScript development and plays an important role in the development of web applications and other software. Its support for object-oriented and functional programming, as well as its compatibility with web browsers, make it a highly valuable tool for software developers. Despite its limitations, its simplicity and flexibility make it a popular choice for building a wide range of software applications.",
-        "page": 1
       }
     ]
   }
